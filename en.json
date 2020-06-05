@@ -1,0 +1,806 @@
+{
+  "NAV": {
+    "PRIMARY": {
+      "DASHBOARD_LINK": "DASHBOARD",
+      "AUTOMATION_LINK": "AUTOMATION",
+      "MANUAL_LINK": "MANUAL",
+      "SEARCH_PLACEHOLDER": "Search",
+      "HELP_MENU": {
+        "SUPPORT_LABEL": "Support",
+        "INTRODUCTION_LINK": "Introduction",
+        "API_DOCUMENTATION_LINK": "API documentation",
+        "KNOWLEDGE_BASE_LINK": "Knowledge base",
+        "SUPPORTED_BROWSERS_LINK": "Supported browsers",
+        "DATA_PRIVACY_LABEL": "Data & Privacy",
+        "CSV_IMPORTER_LINK": "CSV importer",
+        "RIGHT_TO_BE_FORGOTTEN_LINK": "Right to be forgotten",
+        "DATA_RETENTION_POLICY_LINK": "Data retention policy",
+        "DELETE_ALL_CONTENT_LINK": "Delete all content",
+        "SERVICE_STATUS_LABEL": "Service Status"
+      },
+      "SETTING_MENU": {
+        "GENERAL_LINK": "General",
+        "TEAM_SETTINGS_LABEL": "Team Settings",
+        "TEAM_MEMBERS_LINK": "Team members",
+        "MODERATION_INTERFACE_LINK": "Moderation interface",
+        "API_INTEGRATION_LINK": "API integration"
+      },
+      "USER_MENU": {
+        "CHANGE_PASSWORD_LINK": "Change password",
+        "SIGN_OUT_LINK": "Sign out"
+      }
+    },
+    "SUB": {
+      "STATISTICS": "Statistics",
+      "ITEM_LOG": "Item Log"
+    }
+  },
+  "DASHBOARD": {
+    "STATISTICS": {
+      "TIMEZONE_TOOLTIP": "Date/time expressed in {timeZone} time zone",
+      "TOTAL_DECISIONS_LABEL": "TOTAL DECISIONS",
+      "APPROVED_LABEL": "APPROVED",
+      "REFUSED_LABEL": "REFUSED",
+      "AUTOMATION_LABEL": "Automation",
+      "MANUAL_LABEL": "Manual",
+      "TOTAL_RECEIVED": "TOTAL RECEIVED",
+      "NOW_IN_MANUAL": "NOW IN MANUAL",
+      "OLDEST_ITEM_AGE": "Oldest item age",
+      "ERROR": "An error occurred when loading statistics",
+      "RELOAD_BUTTON": "Try Reloading",
+      "DATE_PICKER": {
+        "START_DAY_PLACEHOLDER": "Start day is required",
+        "END_DAY_PLACEHOLDER": "End day is required",
+        "TO": "to"
+      },
+      "CHART": {
+        "STACKED_BUTTON": "Stacked",
+        "GROUPED_BUTTON": "Grouped",
+        "GROUPED_BUTTON_TOOLTIP": "Choose a different time frame to use the grouped display mode",
+        "LEGEND": {
+          "TOTAL_DECISIONS": "Total Decisions",
+          "REFUSED_MANUAL": "Refused Manual",
+          "REFUSED_AUTO": "Refused Auto",
+          "APPROVED_MANUAL": "Approved Manual",
+          "APPROVED_AUTO": "Approved Auto"
+        }
+      }
+    },
+    "ITEM_LOG": {
+      "TITLE": "Item Log",
+      "SEARCH_BY_ID_PLACEHOLDER": "Search by Item ID",
+      "SELECT_START_DAY_PLACEHOLDER": "Select a start day",
+      "SELECT_END_DAY_PLACEHOLDER": "Select an end day",
+      "SHOW_RESULT": " <b>{range}</b> out of {total, plural, =0 {<b>0</b> item} =1 {<b>1</b> item} other {<b>{total}</b> items} }",
+      "REFRESH_BUTTON_TOOLTIP": "Refresh",
+      "DATE_PICKER": {
+        "TO": "to"
+      },
+      "TABLE": {
+        "HEADER": {
+          "ID": "ID",
+          "CONTENT": "Content",
+          "RECEIVED_AT": "Received at",
+          "DECISION_RULES": "Rules matched",
+          "STATUS": "Status",
+          "QUEUE": "Queue"
+        },
+        "TABS": {
+          "ALL": "All",
+          "APPROVED": "Approved",
+          "AUTO_APPROVED": "Auto-approved",
+          "MANUAL_APPROVED": "Manually-approved",
+          "REFUSED": "Refused",
+          "AUTO_REFUSED": "Auto-refused",
+          "MANUAL_REFUSED": "Manually-refused",
+          "REVIEWABLE": "Reviewable",
+          "NO_DECISION": "No decision",
+          "PROCESSING": "Processing"
+        },
+        "TEXT": {
+          "NO_DATA": "Give Implio a try",
+          "NO_RESULT": "No items match your search",
+          "HAS_ERROR": "An error occurred",
+          "NO_ITEMS_IMPORTED": "No items have been imported yet",
+          "RESET_SEARCH": "Reset Search Criteria",
+          "INTEGRATE": "Can't wait to start integrating?",
+          "NO_DATA_DEFAULT_TEXT": "You don't have any data yet",
+          "NO_RESULTS_DEFAULT_TEXT": "No data match your search"
+        },
+        "BUTTON": {
+          "IMPORT_SAMPLE": "Import Sample",
+          "TRY_AGAIN": "Try again"
+        },
+        "LINK": {
+          "API": "Read our API Documentation"
+        }
+      }
+    }
+  },
+  "ITEM": {
+    "MATCHED_RULES": {
+      "NONE": "None"
+    },
+    "STATUS_LABEL": "Status",
+    "STATUS": "{STATUS, select, approved{Approved} refused{Refused} reviewable{Reviewable} deferred{Escalated} new{Processing} no-decision{No decision} other{}}",
+    "CATEGORY": "Category",
+    "TYPE": "Type",
+    "PRICE": "Price",
+    "RULES": "Rules matched",
+    "IP_ADDRESS": "IP address",
+    "EMAIL": "Email",
+    "ITEM_ID": "Item ID",
+    "USER_ID": "User ID",
+    "PHONE": "Phone",
+    "ITEM_HISTORY": "Item history",
+    "ITEM_HISTORY_COUNT": "{COUNT, plural, =1{1 entry} other{{COUNT} entries}}",
+    "USER_LOCATION": "User location",
+    "USER_DEFINED": "User-defined",
+    "USER_LOCATION_TOOLTIP": "Open in Google maps",
+    "GEO_LOCATION": "Geo location",
+    "IMAGE_FAIL_TEXT": "Implio could not fetch <a class='eva-link-primary' href='{link}' target='_blank'>this image</a>",
+    "LOADING_DUPLICATES": "Loading duplicates...",
+    "FAILED_TO_LOAD_DUPLICATES": "Failed to load duplicates",
+    "NO_DUPLICATES": "No duplicate",
+    "SHOW_DUPLICATES_LINK": "{COUNT, plural, =1{1 item} other {{COUNT} items}}",
+    "NO_IMAGE_FOR_ITEM_TEXT": "No image for this item",
+    "DECISION_SUMMARY": {
+      "TIME_TO_DECISION": "Time to decision: {TIME}",
+      "DECISION_MADE_BY_WHOM_TEXT": "{DECISION_MADE, select, approved{Approved} refused{Refused} no-decision{No decision} other{}} {DOMAIN, select, client{{HAS_CLIENT_AGENT_ID, select, false{remotely} other{remotely by {CLIENT_AGENT_ID}}}} agent{by {AGENT_ID}} processor{by Automation} other{}}"
+    },
+    "MEDIA_GALLERY": {
+      "SEE_MORE_TEXT": "See {NUMBER} more"
+    },
+    "BODY": {
+      "PLACEHOLDER": "Enter text..."
+    },
+    "ITEM_DETAILS": "Item details",
+    "USER_DETAILS": "User details",
+    "LOCATION_DETAILS": "Location details",
+    "USER_NAME": "Username",
+    "IMPLIO_ID": "Implio ID",
+    "DUPLICATES": "Duplicates",
+    "FEEDBACK": {
+      "EXPLANATION": "give feedback to user (optional)",
+      "PLACEHOLDER": "Feedback",
+      "DROP_DOWN_TITLE": "select one or more feedbacks",
+      "LABEL": "Feedback"
+    },
+    "SELECT_DECISION_LABEL": "Select decision",
+    "APPROVE_BUTTON": "Approve",
+    "REFUSE_BUTTON_DROP_DOWN_TITLE": "SELECT REFUSAL REASON",
+    "SEND_TO_QUEUE_DROP_DOWN_TITLE": "SELECT QUEUE",
+    "SEND_TO_QUEUE_BUTTON": "Send to queue",
+    "DEFAULT_REFUSE_BUTTON_LABEL": "Refuse",
+    "DECISION_TEXT": "{DECISION_TYPE, select, approve{<b>Approve</b>} refuse{<b>Refuse:</b> {REFUSAL_REASON_NAME}} defer{<b>Send to:</b> {QUEUE_NAME} queue} other{}}",
+    "BOUNDING_BOX": {
+      "FACE": "Face",
+      "TEXT": "Text"
+    },
+    "NOTICE": {
+      "FACE": "{COUNT, plural, =1{1 Face} other{{COUNT} Faces}}",
+      "TEXT": "{COUNT} Text"
+    },
+    "DUPLICATE_MODAL": {
+      "TITLE": "Duplicate items",
+      "CATEGORY": {
+        "APPROVED": "Approved",
+        "REFUSED": "Refused",
+        "REVIEWABLE": "Reviewable",
+        "OTHER": "Other"
+      }
+    },
+    "DATE": "Date",
+    "IP": "IP",
+    "HISTORY_MODAL": {
+      "TITLE": "Item history",
+      "EVENT": "Event",
+      "ACTOR": "Actor",
+      "TIME": "Time",
+      "STATUS": "{STATUS, select, new{Item received} modified{Modified} reviewed{Item reviewed} refused{Refused} approved{Approved} sent-to-queue{Sent to {QUEUE_NAME} queue} other{}} {IS_REMOTE, select, true{remotely} other{}}"
+    },
+    "RULE_MATCHED_MODAL": {
+      "TOGGLE_EXPRESSION_LINK": "{IS_EXPANDED, select, true{Hide expressions} other{Show expressions}}"
+    },
+    "NEW_USER_LABEL": "New",
+    "NEW_USER_TOOLTIP": "This user has no approved or refused item"
+  },
+  "SEARCH": {
+    "HEADER": {
+      "NEWEST": "Newest",
+      "OLDEST": "Oldest",
+      "MOST_RELEVANT": "Most relevant",
+      "IMAGE_VIEW_BUTTON_TOOLTIP": "Image View",
+      "GENERAL_VIEW_BUTTON_TOOLTIP": "General View",
+      "HELP_ICON_TOOLTIP": "Search help",
+      "REFRESH_ICON_TOOLTIP": "Refresh",
+      "ITEMS_SELECTED": "{COUNT, plural, =0{0 item selected} =1{1 item selected} other{{COUNT} items selected}}",
+      "APPROVE_BUTTON": "Approve",
+      "SUBMIT_BUTTON_TOOLTIP": "{SUBMITTABLE, select, true{Submit decisions} other{Please select an item and a decision}}",
+      "DECISION_TEXT": "{DECISION, select, approve{Approve} refuse{Refuse: {REFUSE_REASON}} other {}}"
+    },
+    "ITEM": {
+      "STATUS": "{STATUS, select, remotely-approved{Remotely-approved} remotely-refused{Remotely-refused} manual-approved{Manually-approved} auto-approved{Auto-approved} manual-refused{Manually-refused} auto-refused{Auto-refused} reviewable{Reviewable} deferred{Reviewable} new{Processing} no-decision{No decision} other{}}",
+      "STATUS_TOOLTIP": "{STATUS, select, remotely-approved{Remotely-approved} remotely-refused{Remotely-refused} manual-approved{Manually-approved} auto-approved{Auto-approved} manual-refused{Manually-refused} auto-refused{Auto-refused} reviewable{Reviewable} deferred{Escalated} new{Processing} no-decision{No decision} other{}} {BY_USER_EMAIL} {TIME_PREP, select, at{at} since{since} other{}} {TIME} {TIMEZONE}",
+      "RECEIVED_AT_TOOLTIP": "Received at {TIMESTAMP} {TIMEZONE}",
+      "OPEN_IN_WEBSITE": "Open in {WEBSITE}",
+      "SEARCH_USER_ID_TOOLTIP": "Search user id: {VALUE}",
+      "SEARCH_USER_NAME_TOOLTIP": "Search username: {VALUE}",
+      "SEARCH_IP_TOOLTIP": "Search IP: {VALUE}",
+      "SEARCH_TYPE_TOOLTIP": "Search type: {VALUE}",
+      "SEARCH_CATEGORY_TOOLTIP": "Search category: {VALUE}",
+      "SEARCH_ITEM_ID_TOOLTIP": "Search item id: {VALUE}",
+      "SEARCH_IMPLIO_ID_TOOLTIP": "Search Implio id: {VALUE}",
+      "SEARCH_EMAIL_TOOLTIP": "Search email:",
+      "SEARCH_PHONE_NUMBER_TOOLTIP": "Search phone number:"
+    },
+    "TEXT": {
+      "RESET_SEARCH": "Reset search",
+      "NO_ITEMS_MATCH": "No items match your search",
+      "HAS_ERROR": "An error occurred",
+      "NO_DATA": "We are still waiting for your first moderation item",
+      "UPDATE_DECISION_SUCCESS": "{COUNT, plural, =1 {1 item has been updated!} other{{COUNT} items have been updated!}}",
+      "UPDATE_DECISION_FAILURE": "Failed to change decision of {COUNT, plural, =1{1 item} other{{COUNT} items}}: locked by another user"
+    },
+    "BUTTON": {
+      "TRY_AGAIN": "Try again"
+    },
+    "LINK": {
+      "API": "API Documentation"
+    },
+    "HELP_MODAL": {
+      "TEXT_SEARCH_SECTION": {
+        "TITLE": "Text search",
+        "TEXT": "A <strong>free text</strong> search query without any operator, such as <span class='highlight'>volvo for sale</span> will match any documents that contains <strong>any of the words</strong> in <strong>any of the fields</strong>  independently of their order. If surrounding the query with double quotes, e.g. <span class='highlight'>\"volvo for sale\"</span>  it will search for all of the words in that order. It is also possible to specify words that <strong>must</strong> (+) and <strong>must not</strong> (-) be present. For example, <span class='highlight'>apple +iPhone -7s</span> finds any items where iPhone must be present, 7s must not be present and where apple is optional."
+      },
+      "SEARCH_ON_SPECIFIC_FIELDS_SECTION": {
+        "TITLE": "Search on specific fields",
+        "TEXT": "Besides, you can also specify what <b>fields</b> the query should match against:",
+        "LINE1": "Search for items that contain <span class='highlight'>lamp</span> in the title: <span class='highlight'>document.content.title:lamp</span>",
+        "LINE2": "Search for the exact phrase <span class='highlight'>MacBook Pro</span> in the body: <span class='highlight'>document.content.body:\"MacBook Pro\"</span>.",
+        "LINE3": "Search with the <span class='highlight'>*</span> wildcard to replace 0+ characters: <span class='highlight'>document.content.category.name:Cars*</span>."
+      },
+      "RANGE_SEARCH_SECTION": {
+        "TITLE": "Range search",
+        "TEXT": "For date, numeric and string fields, it is also possible to specify a <strong>range</strong>. Inclusive ranges are specified with square brackets <span class='highlight'>[min TO max]</span> and exclusive ranges with curly brackets <span class='highlight'>{min TO max}</span>. One sided ranges can be specified with <span class='highlight'>&gt;</span>, <span class='highlight'>&gt;=</span>,<span class='highlight'>&lt;</span>, and <span class='highlight'>&lt;=</span>:",
+        "LINE1": "Search for items that have a price between <span class='highlight'>3</span> to <span class='highlight'>10</span>: <span class='highlight'>document.content.price.amount:[3 TO 10]</span>",
+        "LINE2": "Search for items that have a price less than or equal to <span class='highlight'>50</span>: <span class='highlight'>document.content.price.amount:&lt;=50</span>"
+      },
+      "LOGICAL_OPERATORS_SECTION": {
+        "TITLE": "OR/AND Logical Operators",
+        "TEXT": "Finally, it is also possible to <strong>group</strong> multiple words, operators and clauses to form sub queries:",
+        "LINE1": "Search for items that contain the words <span class='highlight'>dangerous</span> and <span class='highlight'>phone</span> in the body, the words <span class='highlight'>volvo</span> or <span class='highlight'>sell</span> in the title and where the category begins with <span class='highlight'>Kl</span>: <span class='highlight'>document.content.body:(dangerous AND phone) OR document.content.title:(volvo sell) AND document.content.category.name:Kl*</span>"
+      },
+      "MORE_HELP_SECTION": {
+        "TITLE": "More help",
+        "TEXT": "More information and examples are available in the <a class='blueLink' target='_blank' href='https://implio.helpjuice.com/17023-human-moderation/search-query-syntax'>Knowledge Base</a>"
+      },
+      "BUTTON": {
+        "GOT_IT": "GOT IT"
+      }
+    }
+  },
+  "AUTOMATION": {
+    "DECISION_RULES": {
+      "NAV": "Decision Rules",
+      "TITLE": "Decision Rules",
+      "NEW_RULE_BTN": "New Rule",
+      "NEW_RULES_MODE": {},
+      "SEARCH_PLACEHOLDER": "Search by Title",
+      "PAGINATION_TEXT": " of ",
+      "NO_DATA_TEXT": "You don't have any rules yet",
+      "NO_DATA_LINK": "Create new rule",
+      "NO_RESULTS_TEXT": "No rules match your search",
+      "NO_RESULTS_LINK": "Reset Search Criteria",
+      "HAS_ERROR_TEXT": "Data could not be fetched",
+      "HAS_ERROR_BTN": "Try Again",
+      "HEADER": {
+        "STATUS": "Status",
+        "TITLE": "Title",
+        "DATE_CREATED": "Date Created",
+        "DATE_MODIFIED": "Date Modified",
+        "LAST_MODIFIED": "Last modified by",
+        "RULE_ACTION": "Rule Action"
+      },
+      "STATUS": {
+        "ERROR_TEXT": "There was a problem when attempting to update rule \"{filterName}\".",
+        "SUCCESS_TEXT": "Rule \"{filterName}\" was successfully updated."
+      },
+      "EDIT_TOOLTIP": "Edit",
+      "DELETE_TOOLTIP": "Delete",
+      "DELETE_POPOVER": {
+        "TEXT": "Are you sure? Please confirm that you want to delete <b> {filterName} <b/>",
+        "CONFIRM_BTN": "Confirm",
+        "CANCEL_BTN": "Cancel",
+        "SUCCESS_TEXT": "Rule \"{filterName}\" was successfully removed",
+        "FAIL_TEXT": "Could not delete rule."
+      },
+      "LIST_BUILDER": {
+        "PERCENTAGE": "(<b>{TYPE, select, zero{0%} small{<0.1%} big{{VALUE}%} other{}}</b> of all items)"
+      }
+    },
+    "LISTS": {
+      "NAV": "Lists",
+      "TITLE": "Lists",
+      "NEW_LIST_BTN": "New List",
+      "SEARCH_PLACEHOLDER": "Search by Title",
+      "PAGINATION_TEXT": " of ",
+      "NO_DATA_TEXT": "You don't have any lists yet",
+      "NO_DATA_LINK": "Create new list",
+      "NO_RESULTS_TEXT": "No lists match your search",
+      "NO_RESULTS_LINK": "Reset Search Criteria",
+      "HAS_ERROR_TEXT": "Data could not be fetched",
+      "HAS_ERROR_BTN": "Try Again",
+      "HEADER": {
+        "TITLE": "Title",
+        "DESCRIPTION": "Description",
+        "DATE_CREATED": "Date Created",
+        "DATE_MODIFIED": "Date Modified"
+      },
+      "DELETE_TOOLTIP": "Delete",
+      "DELETE_POPOVER": {
+        "TEXT": "Are you sure? Please confirm that you want to delete <b> {listName} <b/>",
+        "CONFIRM_BTN": "Confirm",
+        "CANCEL_BTN": "Cancel",
+        "SUCCESS_TEXT": "List \"{dictionaryName}\" was successfully removed",
+        "NOT_FOUND_TEXT": "Could not delete list as it was not found, most likely already removed.",
+        "FAIL_TEXT": "Unable to delete list \"{dictionaryName}\". The following filters are referencing it: \"{filterNamesCommaSeparated}\" "
+      }
+    }
+  },
+  "MANUAL": {
+    "QUEUE_LIST_PAGE_BODY": {
+      "TITLE": "Manual moderation queues",
+      "ADD_QUEUE_ICON_TOOLTIP": "Create a new queue",
+      "FILTER_PLACEHOLDER": "Filter queues by name",
+      "PAGINATION_TEXT": " of ",
+      "NO_DATA_TEXT": "You don't have any queues yet",
+      "NO_RESULT_TEXT": "No queues match your search",
+      "NO_RESULT_LINK": "Reset Search Criteria",
+      "HAS_ERROR_TEXT": "Data could not be fetched",
+      "HAS_ERROR_BTN": "Try Again",
+      "NAME_TITLE": "Name",
+      "PENDING_ITEMS_TITLE": "Pending items",
+      "LONGEST_WAITING_TITLE": "Longest waiting",
+      "EDIT_ICON_TOOLTIP": "Edit",
+      "DELETE_ICON_TOOLTIP": "Delete"
+    },
+    "ADD_QUEUE_POPOVER": {
+      "TITLE": "Create a new queue",
+      "LABEL": "Queue name",
+      "BTN": "+ Create Queue",
+      "ERROR_TEXT": "A queue with this name already exists",
+      "SUCCESS_TEXT": "Queue has been created",
+      "FAIL_TEXT": "Failed to create queue"
+    },
+    "EDIT_QUEUE_POPOVER": {
+      "TITLE": "Edit queue",
+      "BTN": "Update Queue",
+      "SUCCESS_TEXT": "Queue has been updated",
+      "FAIL_TEXT": "Failed to update queue name"
+    },
+    "DELETE_QUEUE_POPOVER": {
+      "SUCCESS_TEXT": "Queue has been deleted",
+      "FAIL_TEXT": "Failed to delete queue",
+      "NO_ITEMS_IN_QUEUE": {
+        "TITLE": "Delete queue",
+        "CONFIRM_DELETE_TEXT": "Are you sure you want to delete",
+        "CONFIRM_DELETE_BTN": "Yes, delete queue",
+        "AFFIRM_DELETE_BTN": "No, keep queue"
+      },
+      "ITEMS_IN_QUEUE": {
+        "TEXT": "To delete {currentQueueName}, you must first",
+        "SUB_TEXT1": "Empty it by reviewing all pending items ",
+        "SUB_TEXT2": "Update all rules that are using this queue as destination for <b>Send to queue</b> action"
+      },
+      "FILTERS_USE_BY_QUEUE": {
+        "TEXT": "Rules using this queue",
+        "BTN": "Got it!"
+      },
+      "NO_FILTER_USE_BY_QUEUE": {
+        "BTN": "Got it!"
+      }
+    },
+    "QUEUE_LIST_PAGE_FOOTER": {
+      "MODERATION_QUEUES_TITLE": "Moderation queues",
+      "MODERATION_QUEUES_INFO": "Queues are where items await for manual review. \nFrom this screen, you can check at a glance which queues need the most attention. Pick a queue and start moderating!\nQueues can be worked on by moderators in parallel: each moderator will get to work on its own items.",
+      "DIFFERENT_QUEUES_TITLE": "Different queues for different duties",
+      "DIFFERENT_QUEUES_INFO": "Use automation rules to route items to a specific queue, based on criteria such as the language, price or category of an item, or the geolocation of end users.\nModerators can also route items to a different queue, to have someone else look into an item."
+    }
+  },
+  "SETTING": {
+    "SIDE_BAR": {
+      "USER_SETTINGS_LABEL": "User settings",
+      "CHANGE_PASSWORD_LINK": "Change password",
+      "TEAM_SETTINGS_LABEL": "Team settings",
+      "GENERAL_LINK": "General",
+      "TEAM_MEMBERS_LINK": "Team members",
+      "MODERATION_INTERFACE_LINK": "Moderation interface",
+      "API_INTEGRATION_LINK": "API integration",
+      "DATA_AND_PRIVACY_LABEL": "Data & Privacy",
+      "CSV_IMPORTER_LINK": "CSV importer",
+      "RIGHT_TO_BE_FORGOTTEN_LINK": "Right to be forgotten",
+      "DATA_RETENTION_POLICY_LINK": "Data retention policy",
+      "DELETE_ALL_CONTENT_LINK":"Delete all content"
+    },
+    "CHANGE_PASSWORD": {
+      "TITLE": "Change Password",
+      "OLD_PASSWORD_LABEL": "Old Password",
+      "NEW_PASSWORD_LABEL": "New Password",
+      "REPEAT_PASSWORD_LABEL": "Confirm New Password",
+      "SAVE_CHANGES_BUTTON": "SAVE CHANGES",
+      "ERROR_MESSAGE": {
+        "OLD_PASSWORD_EMPTY": "Old password cannot be empty.",
+        "NEW_PASSWORD_EMPTY": "New password cannot be empty.",
+        "NEW_PASSWORD_FORMAT": " New password must be minimum 8 characters, at least 1 alphabet(a-z, A-Z), 1 digit(0-9) and 1 special character.",
+        "CONFIRM_PASSWORD_EMPTY": "Please confirm your new password.",
+        "CONFIRM_PASSWORD_MISMATCH": "Confirmed password doesn't match with the new password."
+      },
+      "PASSWORD_UPDATED_MESSAGE": "Password has been updated.",
+      "PASSWORD_INCORRECT_ERROR_MESSAGE": "Failed to change password because old password is incorrect",
+      "PASSWORD_UPDATE_FAILURE_MESSAGE": "There was an error when communicating with the Implio server. Please try again."
+    },
+    "GENERAL": {
+      "TITLE": "General",
+      "CHANGE_TEAM_NAME_TEXT": "Change team name",
+      "UPDATE_SUCCESS": "Team name has been updated",
+      "TEAM_NAME_EMPTY": "Team name cannot be empty",
+      "TEAM_NAME_TOO_LONG": "Team name cannot exceed 30 characters",
+      "ERROR": {
+        "FAIL_TO_LOAD_DETAILS": "An error occurred when loading the details",
+        "FAIL_TO_UPDATE": "Failed to update team name"
+      },
+      "TRY_AGAIN_BUTTON": "Try Again",
+      "SAVE_BUTTON": "SAVE"
+    },
+    "API_INTEGRATION": {
+      "TITLE": "API Integration",
+      "TRY_AGAIN_BUTTON": "Try Again",
+      "API_KEY_TEXT": "API key",
+      "WEBHOOK_TEXT": "Webhook URL",
+      "COPY_BUTTON": "Copy",
+      "SAVE_BUTTON": "Save",
+      "API_DOC_TEXT": "API Documentation",
+      "API_DOC_LINK": "The API documentation can be found in the following <a class='link-apidoc' href='http://besedo.com/api-documentation/' target='_blank'>link</a>.",
+      "ERROR": {
+        "FAIL_TO_LOAD_DETAILS": "An error occurred when loading the details",
+        "INVALID_URL": "You must provide a valid HTTPS URL.",
+        "SAVE_FAILURE": "Failed to update the api integration URL."
+      },
+      "SAVE_SUCCESS": "Saved successfully"
+    },
+    "MODERATION_INTERFACE": {
+      "SAVE_BUTTON": "Save settings", 
+      "DISCARD_CHANGES_BUTTON": "Discard changes", 
+      "TITLE": "Moderation interface",
+      "SAVE_SUCCESS": "Changes are successfully saved",
+      "SAVE_ERROR": "Failed to update the settings, please try again",
+      "GENERAL": {
+        "TITLE": "General",
+        "ITEM_PER_PAGE": "Items per page",
+        "ITEM_PER_PAGE_DESCRIPTION": "Number of moderation items displayed per page.",
+        "ITEM_PER_PAGE_ERROR": "Please input a number between 1 and 20.",
+        "PRESELECT_APPROVE": "Pre-select 'Approve' button",
+        "PRESELECT_APPROVE_DESCRIPTION": "Enable this option to save time clicking when unwanted items are very infrequent.",
+        "ALLOW_AMENDMENT": "Allow amendments",
+        "ALLOW_AMENDMENT_DESCRIPTION": "Allow the content or decision of an item to be modified after the item was first moderated."
+      },
+      "LAYOUT": {
+        "TITLE": "Layout",
+        "SECTIONS": {
+          "TITLE": "Sections",
+          "TEXT": "Choose which sections to enable and the order in which they are displayed.",
+          "SECTION_NAME_LABEL": "Section name",
+          "DISPLAY_SECTION_LABEL": "Display section",
+          "ITEM_DETAILS": "Item details",
+          "USER_DETAILS": "User details",
+          "LOCATION_DETAILS": "Location details"
+        },
+        "IMAGE_SIZE": {
+          "TITLE": "Image size",
+          "NO_IMAGE": "No image",
+          "MEDIUM": "Medium",
+          "LARGE": "Large"
+        }
+      },
+      "EDIT_USER_PERMISSION": {
+        "TITLE": "Edit user permissions",
+        "ALLOW_IMAGE_CROPPING": "Allow image cropping",
+        "ALLOW_IMAGE_CROPPING_DESCRIPTION": "Allow moderators to crop images.",
+        "ALLOW_IMAGE_ROTATION": "Allow image rotation",
+        "ALLOW_IMAGE_ROTATION_DESCRIPTION": "Allow moderators to rotate images by 90º angle per step."
+      }
+    },
+    "TEAM_MEMBER": {
+      "TITLE": "Invite people to this team",
+      "PENDING_INVITES_TEXT": "Pending invites:",
+      "INVITATION_SENT_TEXT": "Invitation sent.",
+      "SEND_AGAIN_TEXT": "You can send a reminder {IN_SOME_TIME}",
+      "UPDATE_ROLE_SUCCESS_MESSAGE": "Role is successfully updated!",
+      "UPDATE_ROLE_FAILURE_MESSAGE": "Failed to set role to user {EMAIL}",
+      "SEND_REMINDER_SUCCESS_MESSAGE": "Reminder has been sent",
+      "SEND_REMINDER_FAILURE_MESSAGE": "Failed to send reminder",
+      "SEND_REMINDER_LINK": "Send a reminder",
+      "GET_MEMBERS_FAILURE_MESSAGE": "Failed to get all the team members",
+      "GET_INVITES_FAILURE_MESSAGE": "Failed to get the pending invites",
+      "CREATE_INVITE": {
+        "INPUT_PLACEHOLDER": "Email to invite",
+        "BUTTON_PLACEHOLDER": "Select a role",
+        "ERROR": {
+          "INVALID_EMAIL": "You must provide a valid email address."
+        },
+        "INVITE_BUTTON": "{TEXT, select, INVITE{INVITE} INVITED{INVITED} other{}}",
+        "SUCCESS_MESSAGE": "Invitation has been sent",
+        "FAILURE_MESSAGE": "Failed to send invitation"
+      },
+      "ROLES": {
+        "ADMIN": "Admin",
+        "AUTOMATION_SPECIALIST": "Automation Specialist",
+        "MODERATOR": "Moderator",
+        "SPECTATOR": "Spectator",
+        "NO_ACCESS": "No access"
+      },
+      "MODAL": {
+        "TITLE": "Invite new people to your team.",
+        "TEXT1": "Each new member will receive a set of permissions based on the role you assigned.",
+        "TEXT2": "The permissions of each role are as follows:",
+        "TABLE_HEADER": "Permissions/Roles",
+        "TEXT3": "To learn more, check out the <a class='blueLink' href='http://help.besedo.com/account-administration/how-to-change-a-users-role'>knowledge base</a>",
+        "PERMISSIONS": {
+          "MANAGE_TEAM_MEMBERS":"Manage team members", 
+          "MANAGE_API_WEBHOOK":"Manage API Key and Webhook URL", 
+          "CSV_IMPORTER":"Import items using the CSV Importer", 
+          "MANAGE_RULES_LISTS": "Manage rules and lists",
+          "MODERATE": "Moderate items", 
+          "SEARCH": "Search items",
+          "SEE_OVERVIEW": "See overview statistics", 
+          "INTERCOM": "Intercom chat"
+        }
+      }
+    },
+    "DATA_AND_PRIVACY": {
+      "WILL_BE_DELETED_LABEL": "What will be deleted",
+      "WILL_NOT_BE_DELETED_LABEL": "These will NOT be touched"
+    },
+    "RIGHT_TO_BE_FORGOTTEN": {
+      "TITLE": "Right to be forgotten",
+      "TEXT1": "You can delete all items tied to a specific user ID. This can be used for handling \"right to be forgotten\" requests coming from your end users.\n\nUpon confirmation, all items ever sent to Implio for moderation (either via API or CSV importer) and tied to the specified user ID will be deleted permanently.",
+      "WILL_BE_DELETED": {
+        "TEXT1": "All items tied to the specified user ID and previously sent to Implio for moderation (via API or CSV importer)"
+      },
+      "WILL_NOT_BE_DELETED": {
+        "TEXT1": "Items tied to other user IDs",
+        "TEXT2": "Statistics",
+        "TEXT3": "User & team settings",
+        "TEXT4": "Automation rules and lists"
+      },
+      "USER_ID_LABEL": "User ID",
+      "INPUT_PLACEHOLDER": "Enter user id",
+      "DELETE_DATA_BUTTON": "Delete data",
+      "DELETE_USER_DATA_SUCCESS": "Data deletion has been successfully scheduled",
+      "DELETE_USER_DATA_FAILURE": "Failed to delete user data",
+      "FAILED_TO_FIND_USER_TEXT": "Failed to search for the user. Please try again",
+      "DELETE_USER_DATA_MODAL": {
+        "CONFIRM_BUTTON_TEXT": "Yes, delete data",
+        "CANCEL_BUTTON_TEXT": "No, I've changed my mind",
+        "TITLE": "Delete items for user ID {USER_ID}",
+        "TEXT1": "You are about to permanently delete <b>{COUNT, plural, =1{1 item} other{{COUNT} items}}</b> with a user ID of <b>{USER_ID}</b>. Please note that this operation may take a few hours to complete.",
+        "TEXT2": "Are you sure you want to proceed?",
+        "USER_HAS_NO_DATA_TEXT": "The user {USER_ID} has 0 item in Implio.",
+        "OK_BUTTON_TEXT": "OK, I understand"
+      }
+    },
+    "DELETE_ALL_CONTENT": {
+      "TITLE1": "Delete all content",
+      "TITLE2": "Delete all content scheduled!",
+      "TEXT1": "You can permanently delete all content that has ever been sent to this Implio team for moderation, either via API or CSV importer.<br><br>Upon confirmation, it will take <span class='bold'>48 hours</span> for all content to be irreversibly deleted from this team. Until then, any administrator of this team (including yourself) can still cancel the operation from this page.",
+      "DELETION_SCHEDULED_TEXT": "At <span class='bold'>{TIME}</span>, <span class='bold'>{USER_NAME} ({EMAIL})</span> requested the deletion of all items ever sent to this team for moderation.<br><br>All administrators of this team have been notified by email.<br><br>The data will be <span class='bold'>irreversibly deleted</span> from our servers in <span class='bold'>{REMAINING_TIME}</span>. You or any administrator of this team can still cancel this operation before <span class='bold'>{DEADLINE}</span>.",
+      "DELETE_ALL_CONTENT_BUTTON": "Delete all content",
+      "CANCEL_DELETION_BUTTON": "Cancel deletion",
+      "SCHEDULE_DELETION_SUCCESS": "Deletion has been successfully scheduled",
+      "SCHEDULE_DELETION_FAILURE": "Failed to schedule deletion.",
+      "CANCEL_DELETION_SUCCESS": "Deletion has been successfully cancelled",
+      "CANCEL_DELETION_FAILURE": "Failed to cancel deletion.",
+      "MODAL": {
+        "TITLE": "Delete all content",
+        "TEXT1": "You are about to delete all items from this team. All items ever sent to this Implio team for moderation will be permanently deleted. <br><br>Upon confirmation, you have 48 hours to cancel this operation, after which all content will be deleted irreversibly. An email will be sent to all administrators of this team.",
+        "TEXT2": "all items in this team will be irreversibly deleted",
+        "TEXT3": "items that are still awaiting moderation will also be deleted",
+        "TEXT4": "I have 48 hours to cancel this operation",
+        "TEXT5": "I understand",
+        "BUTTON_CONFIRM": "Yes, delete all content",
+        "BUTTON_CANCEL": "No, I've changed my mind"
+      },
+      "NOTICE": {
+        "WARNING_TEXT": "Warning: all items in this team are about to be permanently deleted.",
+        "TEXT_FOR_ADMIN": "You still have <span class='bold'>{REMAINING_TIME}</span> to cancel this operation.",
+        "TEXT_FOR_NON_ADMIN": "Remaining time is <span class='bold'>{REMAINING_TIME}.</span>",
+        "BUTTON": "Changed your mind?"
+      },
+      "WILL_BE_DELETED": {
+        "TEXT1": "All items ever sent to this team, either via API or CSV importer"
+      },
+      "WILL_NOT_BE_DELETED": {
+        "TEXT1": "Statistics",
+        "TEXT2": "User & team settings",
+        "TEXT3": "Automation rules and lists"
+      }
+    },
+    "DATA_RETENTION_POLICY": {
+      "TITLE": "Data retention policy",
+      "TEXT1": "You can choose to store items sent to your Implio team for moderation (either via API or CSV importer) for a limited time only.",
+      "TEXT2": "By default, all items are automatically deleted after 24 months. You can change the retention period using the options below.",
+      "TEXT3": "Automatically delete items older than",
+      "SELECT_PERIOD_BUTTON_TEXT":"{VALUE, plural, =1{1 month} other {{VALUE} months}}",
+      "NEVER_DELETE_BUTTON": "Never delete",
+      "WILL_BE_DELETED": {
+        "TEXT": "All items ever sent to this team, either via API or CSV importer"
+      },
+      "WILL_NOT_BE_DELETED": {
+        "TEXT1": "Statistics",
+        "TEXT2": "User & team settings",
+        "TEXT3": "Automation rules and lists"
+      },
+      "SAVE_BUTTON": "Save settings",
+      "CANCEL_BUTTON": "Discard changes",
+      "UPDATE_SUCCESS": "Data retention policy is successfully updated!",
+      "UPDATE_FAILURE": "Failed to update data retention policy"
+    },
+    "CSV_IMPORTER": {
+      "TITLE": "Import your sample data from CSV file",
+      "UPLOAD_FILE": {
+        "HEADER": "Upload File",
+        "DRAG_DROP_TEXT": "Drag and Drop a CSV file here",
+        "SELECT_FILE_BTN": "Or select a file to upload",
+        "NEXT_STEP_BTN": "Next Step",
+        "NEED_HELP_TEXT": "Need help?",
+        "FORMAT_CSV_FILE_LINK": "How to format CSV file",
+        "FORMAT_CSV_FILE_MODAL_TEXT1": "Use column titles in your CSV file to simplify attribute mapping",
+        "FORMAT_CSV_FILE_MODAL_TEXT2": "Reuse Implio's attributes as titles of column in the CSV file to automate attribute mapping",
+        "FORMAT_CSV_FILE_MODAL_TEXT3": "Provide  <span class='highlight'>category:id</span> together with  <span class='highlight'>category:name</span>  in separate columns <br>Provide  <span class='highlight'>type:id</span>  together with  <span class='highlight'>type:name</span> in separate columns",
+        "FORMAT_CSV_FILE_MODAL_TEXT4": "Use prices without commas (Ex:  <span class='highlight'>235.99</span>  not  <span class='highlight'>235,99</span>  ), price must be accompanied by currency code in ISO 4217 format (Ex:  <span class='highlight'>USD</span>  or  <span class='highlight'>EUR</span>  )",
+        "FORMAT_CSV_FILE_MODAL_TEXT5": "Country code must be in ISO 3166 format (Ex:  <span class='highlight'>US</span>  or  <span class='highlight'>FR</span>  )",
+        "FORMAT_CSV_FILE_MODAL_TEXT6": "Multiple image URLs, email addresses or phone numbers can be inserted at once by putting them in the same cell separated by commas(Ex:  <span class='highlight'>\"olivier@besedo.com, ada@besedo.com\"</span>)",
+        "EXPORT_CSV_TO_EXCEL_LINK": "How to export CSV from Excel",
+        "DOWNLOAD_SAMPLE_LINK": "Download an example CSV file",
+        "WARNING1": "Error! You can only upload one file at one time",
+        "WARNING2": "Error! You can only upload a CSV file",
+        "WARNING3": "Error! Your CSV file is wrong",
+        "WARNING4": "Error! Your CSV file is empty",
+        "WARNING5": "Error! Your CSV file needs to have at least 3 columns",
+        "WARNING6": "Error! Your CSV file has duplicate columns",
+        "TRY_AGAIN_BTN": "Try again",
+        "DELETE_BTN": "Delete file",
+        "BIG_FILE_TEXT": "The maximum number of documents was exceeded! Only the first {limitDocLength} documents will be imported. Please re-upload the remaining documents in batches of {limitDocLength} or less."
+      },
+      "MAP_COLUMNS": {
+        "HEADER": "Map Columns",
+        "BACK_BTN": "Back to Upload",
+        "NEXT_BTN": "Preview Your Data",
+        "ATTRIBUTE_LABEL": "Attribute",
+        "ATTRIBUTE_ICON_TOOLTIP": "The colon in the name of attribute represents level of data, learn more from the following link.",
+        "ATTRIBUTE_ICON_TOOLTIP_LINK": "API documentation",
+        "CUSTOMER_SPECIFIC_TEXT": "Customer Specific Attribute",
+        "CUSTOMER_SPECIFIC_ICON_TOOLTIP": "If you want to input some general customer specific attribute, please enter text starting with a letter. Subsequent characters can be letters but also be digits (0-9). Keys are case sensitive. If you want to input customer specific attribute under User, Location or Content section, please separate the level name and the attribute value with colon. The field can not be empty. E.g. \"user:information\"",
+        "SELECT_ATTR_PLACEHOLDER": "Select attribute",
+        "CREATE_SPECIFIC_ATTR_OPTION": "Create Customer Specific Attribute",
+        "MAP_COLUMN_LABEL": "Map to the column",
+        "SELECT_COLUMN_PLACEHOLDER": "Select column",
+        "DELETE_BTN": "Delete",
+        "NEW_COLUMN_BTN":"Add New Column",
+        "WARNING": "Please select a value",
+        "WARNING3": "Customer Specific Attribute can not be empty",
+        "WARNING4": "Attribute name is already taken",
+        "WARNING5": "Attribute name is wrong, please check the reference",
+        "WARNING6": "Attribute is missing: "
+      },
+      "PREVIEW_DATA": {
+        "HEADER": "Preview Data",
+        "BACK_BTN": "Edit Mapping",
+        "NEXT_BTN": "Import to Implio",
+        "TITLE": "Review and import your selected columns",
+        "MORE_ITEM_TEXT": "+ {NUM, plural, =1{1 item} other{{NUM} items}}"
+      },
+      "IMPORT_DATA": {
+        "HEADER": "Import Data",
+        "MODAL_TITLE": "You are about to import {dataLength, plural, =1{1 document} other{{errorNum} documents}}", 
+        "MODAL_TEXT": "You will not be able to undo this. Are you sure you want to proceed?",
+        "IMPORT_BTN": "IMPORT DOCUMENTS",
+        "CANCEL_BTN": "CANCEL",
+        "PROCESS_MODAL": {
+          "TITLE": "Please wait while we process your data",
+          "TOTAL_ITEM_TEXT": "{numberOfJobSent, plural, =1{1 item} other{{numberOfJobSent} items}} out of {totalJobNumber} sent.",
+          "ACCEPTED_ITEM_TEXT": "{numberOfJobAccepted, plural, =1{1 item} other{{numberOfJobAccepted} items}} accepted.",
+          "REJECTED_ITEM_TEXT": "{numberOfJobRejected, plural, =1{1 item} other{{numberOfJobRejected} items}} rejected",
+          "SENT_JOB_PERCENTAGE_TEXT": " {percentageOfJobSent}% of all items have sent",
+          "FAIL_API_KEY_TEXT": "Failed to get API key for csv import. Please check if the API key exists."
+        },
+        "SUCCESS_MODAL": {
+          "SUCCESS_TEXT": "Your CSV file import is now complete",
+          "FAIL_TEXT": "Your CSV file import has failed",
+          "TEXT1": "Now you can see Implio in action.",
+          "TEXT2": "Change rules, lists or import more data via CSV importer to see how Implio handles it.",
+          "TEXT3": "Please note that you are not integrated with Implio yet.",
+          "TEXT4": "Go to",
+          "TEXT5": "to find out how to integrate with Implio.",
+          "API_LINK": "API Documentation",
+          "ERROR_TEXT": " {errorNum, plural, =1{1 item} other{{errorNum} items}} has not been imported.",
+          "ITEM_SUCCESS_TEXT": " {successNum, plural, =1{1 item} other{{successNum} items}} has been imported.",
+          "GOT_IT_BTN": "GOT IT"
+        }
+      },
+      "ERROR": {
+        "API_KEY_FAIL": "Failed to get API key for csv import. Please check if the API key exists.",
+        "IMPORT_INTERRUPTED": "Import CSV has been interrupted due to an error. Only the first {numberOfJobSent, plural, =1{1 document} other{{numberOfJobSent} documents}} has been imported. Please try to send the rest of documents again later"
+      }
+    }
+  },
+  "COMMON": {
+    "CHECKBOX": {
+      "ON": "ON",
+      "OFF": "OFF"
+    }
+  },
+  "MODERATION": {
+    "SINGLE_ITEM_VIEW": {
+      "CANCEL_CHANGES_BUTTON": "Cancel changes",
+      "SUBMIT_BUTTON": "Submit changes",
+      "UPDATING_TEXT": "Updating...",
+      "EDIT_BUTTON": "Edit",
+      "RETRY_BUTTON": "Retry",
+      "FAILED_TO_GET_ITEM_TEXT": "Failed to load the item.",
+      "SUBMIT_SUCCESS": "Changes have been submitted!",
+      "PROCESS_ERROR": "Error processing item, please try again.",
+      "NO_ITEM_WTH_ID_ERROR": "There is no item with that id"
+    },
+    "QUEUE_VIEW": {
+      "STATUS_BAR": {
+        "CURRENT_QUEUE": "<span class='queue-info__label'>currently moderating</span><span class='queue-info__name'>{QUEUE_NAME}</span>",
+        "SUBMIT_BUTTON": "Submit",
+        "SUBMIT_BUTTON_DISABLED_TOOLTIP": "Scroll to the bottom to enable this button",
+        "SUBMIT_BUTTON_ENABLED_TOOLTIP": "Submit {COUNT, plural, =0{} =1{1 decision} other{all {COUNT} decisions}}"
+      },
+      "NOTHING_TO_REVIEW": "Nothing to review",
+      "FAILED_TO_LOAD": "Failed to load items.",
+      "RETRY_BUTTON": "Retry",
+      "ERROR_TO_LOAD": {
+        "DECISION_SET": "Error retrieving decision set.",
+        "QUEUES": "Error retrieving escalating queues, try reloading this view.",
+        "DUPLICATES": "Error retrieving duplicated items.",
+        "FEEDBACK": "Error loading feedback.",
+        "MANUAL_SETTING": "Error loading manual setting.",
+        "QUEUE": "Error loading data, try reloading this view."
+      },
+      "JOB_VERSION": {
+        "BACK_LINK": "Back to newest version",
+        "TEXT": "Posted by {ACTOR_TYPE, select, agent{{ACTOR_ID}} other{Processor}}",
+        "NUMBER_OF_VERSIONS": "{COUNT, plural, =1{1 older version found} other{{COUNT} older versions found}}",
+        "SHOW_OLDER_VERSION_LINK": "Show older versions",
+        "HIDE_OLDER_VERSION_LINK": "Hide older versions",
+        "TOOLTIP": "This item has been grouped with previous unmoderated revisions. Any decision you take will only be applied to the most recent revision. All the older revisions will have a \"no decision\" outcome in the API."
+      },
+      "KEYBOARD_SHORTCUT_MODAL": {
+        "TITLE": "Keyboard shortcuts",
+        "TEXT": "Manual moderation shortcuts",
+        "TABLE": {
+          "HEADER": {
+            "ACTION": "Action",
+            "KEY_COMMAND": "Key command"
+          },
+          "ACTION_COLUMN": {
+            "ACCEPT": "Accept",
+            "REFUSE": "Refuse",
+            "SEND_TO_QUEUE": "Send to queue",
+            "HIDE_MENU": "Hide menu",
+            "CONFIRM_DECISION": "Confirm decision",
+            "CLEAR_SEARCH_BOX": "Clear search box",
+            "GO_TO_NEXT_FIELD": "Go to next field",
+            "GO_TO_PREV_FIELD": "Go to previous field",
+            "MOVE_UP": "Move up in list / Scroll up",
+            "MOVE_DOWN": "Move down in list / Scroll up"
+          }
+        }
+      }
+    }
+  }
+}
